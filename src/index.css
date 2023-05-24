@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.tablet {
+  width: 1200px;
+  height: 750px;
+}
