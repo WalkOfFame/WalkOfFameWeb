@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { AppRouter } from "./routing/AppRouter";
+import { AppRouter } from "./navigation/routing/AppRouter";
 
 export const App: FC<{}> = props =>
 {

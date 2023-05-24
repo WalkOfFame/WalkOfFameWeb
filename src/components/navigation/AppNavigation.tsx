@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { useAppRoutes } from "components/routing/useAppRoutes";
+import { useAppRoutes } from "components/navigation/routing/useAppRoutes";
 import { NavigationSet } from "./NavigationSet";
 import { LanguageSelector } from "components/footer/LanguageSelector";
 import { Helmet } from 'react-helmet';
@@ -15,7 +15,7 @@ export const AppNavigation: FC<{}> = props =>
   return (
    <>
     <Helmet>
-      <title>{ activeRoutes.length ? `${activeRoutes[0].name} - Famewood` : "Famewood" }</title>
+      <title>{ activeRoutes.length ? `${t(`navigation.${activeRoutes[0].name}`)} - Famewood` : "Famewood" }</title>
       <meta name="description" content={ t('welcome.jumbotron.text') } />
     </Helmet>
       <div className="md:rounded-b-md p-2 sticky top-0 z-50 bg-violet-500 shadow-md font-medium text-white flex flex-col md:flex-row items-center md:justify-between">

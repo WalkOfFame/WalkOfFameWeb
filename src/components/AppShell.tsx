@@ -1,7 +1,7 @@
 import { AppNavigation } from "components/navigation/AppNavigation";
 import { FC, useEffect } from "react";
 import { Outlet, useLocation } from "react-router-dom";
-import { useAppRoutes } from "./routing/useAppRoutes";
+import { useAppRoutes } from "./navigation/routing/useAppRoutes";
 import { useTranslation } from "react-i18next";
 
 export const AppShell: FC<{}> = props =>

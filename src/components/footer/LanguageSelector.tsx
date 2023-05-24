@@ -46,7 +46,7 @@ export const LanguageSelector: FC<{}> = props =>
                 key={ language }
                 className={({ active }) =>
                   classNames(
-                    active ? 'bg-violet-500 text-white' : 'text-gray-900',
+                    active ? 'bg-violet-500 text-white' : 'text-slate-500',
                     'relative cursor-default select-none py-2 pl-3 pr-9'
                   )
                 }
