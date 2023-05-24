@@ -1,5 +1,15 @@
 import { createRoot } from 'react-dom/client';
 import './index.css';
-import { AppShell } from 'pages/AppShell';
+import { App } from 'components/App';
 
-createRoot(document.getElementById('root')).render(<AppShell />);
+declare global
+{
+  interface Window
+  {
+    AppConfig: { [key: string]: any };
+  }
+}
+
+window.AppConfig = window.AppConfig || {};
+
+createRoot(document.getElementById('root')).render(<App />);
