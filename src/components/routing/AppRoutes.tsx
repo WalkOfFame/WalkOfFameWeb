@@ -16,13 +16,13 @@ export const AppRoutes = (loggedIn: boolean): IAppRoute[] =>
           hide: true
         },
         {
-          name: 'Welcome',
+          name: 'welcome',
           path: 'welcome',
           element: <Welcome />,
           preventLoggedIn: true
         },
         {
-          name: 'Login',
+          name: 'login',
           path: 'login',
           element: <Login />,
           preventLoggedIn: true

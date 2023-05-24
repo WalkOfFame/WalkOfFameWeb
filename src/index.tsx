@@ -1,6 +1,8 @@
 import { createRoot } from 'react-dom/client';
 import './index.css';
 import { App } from 'components/App';
+import './i18n';
+import React from 'react';
 
 declare global
 {
@@ -12,4 +14,8 @@ declare global
 
 window.AppConfig = window.AppConfig || {};
 
-createRoot(document.getElementById('root')).render(<App />);
+createRoot(document.getElementById('root')).render(
+  <React.Suspense>
+    <App />
+  </React.Suspense>
+);
