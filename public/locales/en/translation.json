@@ -6,7 +6,12 @@
   "language.pt-BR": "Português (Brasil)",
   "language.en": "English",
   "navigation.welcome": "Welcome",
-  "navigation.login": "Login",
+  "navigation.signin": "Sign In",
   "navigation.signup": "Sign Up",
-  "footer.rights": "All rights reserved."
+  "navigation.home": "Home",
+  "footer.rights": "All rights reserved.",
+  "label.username": "Username",
+  "label.password": "Password",
+  "label.forgot_password": "Forgot your password?",
+  "auth.continue_with": "or continue with"
 }

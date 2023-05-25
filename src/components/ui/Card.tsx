@@ -1,12 +1,13 @@
 import { classNames } from "components/utils";
 import { FC, ReactNode } from "react";
 
-export const Card: FC<{ children?: ReactNode, className?: string }> = props =>
+export const Card: FC<{ title?: string, children?: ReactNode, className?: string }> = props =>
 {
-  const { children, className = '' } = props;
+  const { title = null, children, className = '' } = props;
 
   return (
-    <div className={ classNames('bg-white rounded-md shadow-sm p-4 flex gap-2 items-center', className)}>
+    <div className={ classNames('bg-white rounded-md shadow-sm p-4 flex flex-col gap-2 w-full', className)}>
+      { title && <div className="font-medium text-xl text-slate-500">{ title }</div> }
       { children }
     </div>
   );

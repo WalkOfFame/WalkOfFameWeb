@@ -4,7 +4,12 @@
   "news": "Notícias",
   "news.subtitle": "Acompanhe os assuntos mais quentes de Famewood",
   "navigation.welcome": "Bem-vindo(a)",
-  "navigation.login": "Entrar",
+  "navigation.signin": "Entrar",
   "navigation.signup": "Registrar",
-  "footer.rights": "Todos os direitos reservados."
+  "navigation.home": "Início",
+  "footer.rights": "Todos os direitos reservados.",
+  "label.username": "Nome de Usuário(a)",
+  "label.password": "Senha",
+  "label.forgot_password": "Esqueceu sua senha?",
+  "auth.continue_with": "ou continue com"
 }

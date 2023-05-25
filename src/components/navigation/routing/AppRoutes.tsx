@@ -1,6 +1,8 @@
 import { AppShell } from "components/AppShell";
 import { IAppRoute } from "components/models";
-import { Login } from "pages/Login";
+import { Login } from "pages/auth/Login";
+import { Register } from "pages/auth/Register";
+import { Home } from "pages/home/Home";
 import { Welcome } from "pages/Welcome";
 
 export const AppRoutes = (loggedIn: boolean): IAppRoute[] =>
@@ -12,7 +14,7 @@ export const AppRoutes = (loggedIn: boolean): IAppRoute[] =>
       children: [
         {
           index: true,
-          redirect: loggedIn ? '/dashboard' : '/welcome',
+          redirect: loggedIn ? '/home' : '/welcome',
           hide: true
         },
         {
@@ -22,10 +24,16 @@ export const AppRoutes = (loggedIn: boolean): IAppRoute[] =>
           preventLoggedIn: true
         },
         {
-          name: 'login',
-          path: 'login',
-          element: <Login />,
+          name: 'signup',
+          path: 'signup',
+          element: <Register />,
           preventLoggedIn: true
+        },
+        {
+          name: 'home',
+          path: 'home',
+          element: <Home />,
+          loginRequired: true
         }
       ]
     },
